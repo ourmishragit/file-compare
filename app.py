@@ -103,15 +103,15 @@ with gr.Blocks() as demo:
                 inputs=[inp1,inp2],
                 outputs=[gr.Dataframe(
                         label = "Processed File-1 / Campaign_SOX_Audit_Response",
-                        headers=['UNAME', 'AGR_NAME'],
+                        headers=['ACCOUNT_NAME', 'ENTITLEMENT VALUE'],
                         datatype=["str", "str"],
                         col_count=(2, "fixed"),
                         scroll_to_output= True,
                         show_progress = True
                 ),
                         gr.Dataframe(
-                        label = "Processed File-2 / SA_SP1",
-                        headers=['ACCOUNT_NAME', 'ENTITLEMENT VALUE'],
+                        label = "Processed File-2 / SA_SP1",                        
+                        headers=['UNAME', 'AGR_NAME'],
                         datatype=["str", "str"],
                         col_count=(2, "fixed"),
                         scroll_to_output= True,
